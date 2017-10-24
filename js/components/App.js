@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../scss/components/app.scss';
+import './app.scss';
 
 export default class App extends React.Component {
   render () {

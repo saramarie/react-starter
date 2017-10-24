@@ -1,8 +1,0 @@
-// Use Normalize as a CSS reset
-@import "../../node_modules/normalize-scss/sass/normalize";
-@include normalize();
-
-// Global Styles
-body {
-  font-family: sans-serif;
-}
