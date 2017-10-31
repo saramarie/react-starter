@@ -19,7 +19,8 @@ module.exports = {
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css-loader!sass-loader')
+        //loader: ExtractTextPlugin.extract('css-loader!sass-loader')
+        loader: ExtractTextPlugin.extract('css-loader?modules,localIdentName="[name]__[local]___[hash:base64:6]"!sass-loader')
       }
     ]
   },

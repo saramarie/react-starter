@@ -1,14 +1,20 @@
 // deps
-import React from 'react';
+import React, { Component } from 'react';
+
+// components
+import UserCard from '../UserCard/UserCard';
 
 // styles
 import './app.scss';
 
-class App extends React.Component {
+class App extends Component {
   render () {
     return (
-      <div>
-        <h1>Hello, world!</h1>
+      <div className="App">
+        <UserCard
+          userName="Sara Williams"
+          email="saramw2014@gmail.com"
+        />
       </div>
     )
   }

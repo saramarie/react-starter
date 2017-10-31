@@ -1,0 +1,49 @@
+.card {
+  background: #eee;
+  color: #555;
+  padding: 1rem;
+}
+
+.username {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.email {
+  font-style: italic;
+}
+
+.link {
+  color: violet;
+  text-decoration: none;
+
+  &:hover {
+    color: darken(violet, 10%);
+    text-decoration: underline; // override no underline on unhovered state
+  }
+}
+
+/*.UserCard {
+  background: #eee;
+  color: #555;
+  padding: 1rem;
+
+  &-userName {
+    color: #333;
+    font-size: 1.5rem;
+  }
+
+  &-email {
+    font-style: italic;
+
+    &-link {
+      color: violet;
+      text-decoration: none;
+
+      &:hover {
+        color: darken(violet, 10%);
+        text-decoration: underline; // override no underline on unhovered state
+      }
+    }
+  }
+}*/
