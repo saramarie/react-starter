@@ -15,11 +15,18 @@ module.exports = {
     filename: 'js/bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css-loader!sass-loader')
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            { loader: 'css-loader', options: { importLoaders: 1 } },
+            'postcss-loader',
+            'sass-loader'
+          ]
+        })
       }
     ]
   },
