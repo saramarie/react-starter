@@ -2,7 +2,11 @@
   "plugins": [
     "stylelint-scss"
   ],
+  "extends": "stylelint-config-sass-guidelines",
   "rules": {
-    "color-no-invalid-hex": true
+    "at-rule-blacklist": null,
+    "max-nesting-depth": 3,
+    "number-leading-zero": "never",
+    "order/properties-alphabetical-order": null
   }
 }

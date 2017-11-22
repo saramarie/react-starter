@@ -18,6 +18,8 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "stylelint": "^8.2.0",
+    "stylelint-config-sass-guidelines": "^4.0.1",
+    "stylelint-order": "^0.7.0",
     "stylelint-scss": "^2.1.0",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
