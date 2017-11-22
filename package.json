@@ -17,6 +17,7 @@
     "postcss-loader": "^2.0.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "stylelint": "^8.2.0",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   },
@@ -31,6 +32,6 @@
   },
   "scripts": {
     "start": "webpack-dev-server --no-info",
-    "lint:styles": "csscomb client"
+    "lint:styles": "csscomb client && stylelint client/**/*.scss"
   }
 }
