@@ -2,7 +2,7 @@
   "name": "react-simple-boiler",
   "version": "1",
   "description": "Not an over-complicated boiler. Just the basic things I always use.",
-  "main": "js/index.js",
+  "main": "client/js/index.js",
   "author": "Sara Marie",
   "license": "MIT",
   "dependencies": {
@@ -30,6 +30,7 @@
     "style-loader": "^0.19.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --no-info"
+    "start": "webpack-dev-server --no-info",
+    "lint:styles": "csscomb client"
   }
 }
