@@ -1,6 +1,6 @@
 {
   "name": "react-simple-boiler",
-  "version": "1",
+  "version": "1.0.0",
   "description": "Not an over-complicated boiler. Just the basic things I always use.",
   "main": "client/js/index.js",
   "author": "Sara Marie",
