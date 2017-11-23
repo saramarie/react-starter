@@ -1,8 +1,8 @@
 // deps
-import React from 'react';
+import React from 'react'
 
 // styles
-import './app.scss';
+import './app.scss'
 
 class App extends React.Component {
   render () {
@@ -14,4 +14,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default App

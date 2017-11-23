@@ -13,6 +13,8 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
     "csscomb": "^4.2.0",
+    "eslint": "^4.11.0",
+    "eslint-plugin-react": "^7.5.1",
     "extract-text-webpack-plugin": "^2.1.2",
     "html-webpack-plugin": "^2.28.0",
     "node-sass": "^4.5.3",
@@ -33,6 +35,9 @@
   },
   "scripts": {
     "start": "webpack-dev-server --no-info",
+    "lint": "yarn lint:js && yarn lint:styles",
+    "lint:js": "./node_modules/.bin/eslint client --fix",
     "lint:styles": "csscomb client && stylelint client/**/*.scss"
-  }
+  },
+  "dependencies": {}
 }
