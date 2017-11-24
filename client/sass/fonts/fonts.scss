@@ -1,4 +1,4 @@
-$base_path: '../../../sass/fonts';
+$base_path: '../../../fonts';
 
 @font-face {
   font-family: 'Libre Baskerville';
@@ -7,7 +7,20 @@ $base_path: '../../../sass/fonts';
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('#{$base_path}/opensans/OpenSans-Regular.ttf');
+  src: url('#{$base_path}/opensans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$base_path}/opensans/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$base_path}/opensans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 600;
 }
 
 @mixin text_body() {
