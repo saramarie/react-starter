@@ -1,0 +1,12 @@
+@import "../../sass/variables/colors";
+@import "../../sass/variables/fonts";
+
+@mixin text_body() {
+  color: $dark--light;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin text_heading() {
+  color: $dark;
+  font-family: 'Libre Baskerville', serif;
+}

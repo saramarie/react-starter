@@ -1,3 +1,5 @@
+@import "../../sass/variables/colors";
+
 $base_path: '../../../fonts';
 
 @font-face {
@@ -21,14 +23,4 @@ $base_path: '../../../fonts';
   font-family: 'Open Sans';
   src: url('#{$base_path}/opensans/OpenSans-Bold.ttf') format('truetype');
   font-weight: 600;
-}
-
-@mixin text_body() {
-  color: #555;
-  font-family: 'Open Sans', sans-serif;
-}
-
-@mixin text_heading() {
-  color: #222;
-  font-family: 'Libre Baskerville', serif;
 }
