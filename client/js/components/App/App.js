@@ -1,9 +1,6 @@
 // deps
 import React from 'react'
 
-// local deps
-import Icon from '../Icon/Icon'
-
 // styles
 import './app.scss'
 
