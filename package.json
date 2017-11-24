@@ -24,6 +24,7 @@
     "postcss-loader": "^2.0.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-styleguidist": "^6.0.33",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.19.0",
     "stylelint": "^8.2.0",
@@ -37,7 +38,8 @@
     "start": "webpack-dev-server --no-info",
     "lint": "yarn lint:js && yarn lint:styles",
     "lint:js": "./node_modules/.bin/eslint client --fix",
-    "lint:styles": "csscomb client && stylelint client/**/*.scss"
-  },
-  "dependencies": {}
+    "lint:styles": "csscomb client && stylelint client/**/*.scss",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
+  }
 }
