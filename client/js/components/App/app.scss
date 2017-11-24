@@ -2,7 +2,11 @@
 @import '~normalize-scss/sass/normalize';
 @include normalize();
 
+// Local deps
+@import "../../../sass/fonts/fonts";
+
 // Global Styles
 body {
-  font-family: sans-serif;
+  @include text_body();
+  font-size: 16px; // base font size
 }

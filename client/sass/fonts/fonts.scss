@@ -1,0 +1,21 @@
+$base_path: '../../../sass/fonts';
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('#{$base_path}/librebaskerville/LibreBaskerville-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$base_path}/opensans/OpenSans-Regular.ttf');
+}
+
+@mixin text_body() {
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin text_heading() {
+  color: #222;
+  font-family: 'Libre Baskerville', serif;
+}

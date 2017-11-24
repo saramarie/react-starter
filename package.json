@@ -41,5 +41,8 @@
     "lint:styles": "csscomb client && stylelint client/**/*.scss",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
+  },
+  "dependencies": {
+    "file-loader": "^1.1.5"
   }
 }
