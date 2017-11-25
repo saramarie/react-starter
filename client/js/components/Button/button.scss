@@ -11,14 +11,31 @@ $colors: (
 );
 
 @mixin button-colors(
+  $name: 'default', // don't use default value
   $button-color: null,
   $text-color: $light
 ) {
-  background: $button-color;
-  color: $text-color;
+  $this: &;
 
-  &:hover {
-    background: darken($button-color, 10%);
+  &--#{$name} {
+    background: $button-color;
+    color: $text-color;
+
+    &:hover {
+      background: hover-color($button-color);
+    }
+
+    &#{$this}--ghost {
+      background: transparent;
+      color: $button-color;
+      border-color: $button-color;
+
+      &:hover {
+        background: hover-color($button-color);
+        color: $text-color;
+        border-color: transparent;
+      }
+    }
   }
 }
 
@@ -27,9 +44,10 @@ $colors: (
   background: $light--dark;
   color: $dark;
   padding: .75rem 1.5rem;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 3px;
   transition: background .2s ease-in,
+    border-color .2s ease-in,
     top .2s ease-in;
   position: relative;
   display: inline-block;
@@ -37,11 +55,8 @@ $colors: (
   appearance: none;
   cursor: pointer;
 
-  // temp
-  margin: 20px;
-
   &:hover {
-    background: darken($light--dark, 10%);
+    background: hover-color($light--dark);
   }
 
   &:active {
@@ -49,8 +64,20 @@ $colors: (
   }
 
   @each $color-name, $color in $colors {
-    &--#{$color-name} {
-      @include button-colors($color);
-    }
+    @include button-colors($color-name, $color);
+  }
+
+  &--fullWidth {
+    width: 100%;
+    display: block;
+  }
+
+  &--small {
+    padding: .4rem 1rem;
+  }
+
+  &--large {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
   }
 }

@@ -11,12 +11,15 @@ class App extends React.Component {
     return (
       <div>
         <h1>Hello, world!</h1>
-        <Button label="Click Here" />
-        <Button label="Click Here" color="primary" />
-        <Button label="Click Here" color="secondary" />
-        <Button label="Click Here" color="alert" />
-        <Button label="Click Here" color="warning" />
-        <Button label="Click Here" color="success" />
+        <p>
+          <Button label="Click Here" color="primary" size="small" />
+        </p>
+        <p>
+          <Button label="Click Here" color="primary" isGhosted />
+        </p>
+        <p>
+          <Button label="Click Here" color="primary" size="large" />
+        </p>
       </div>
     )
   }

@@ -20,3 +20,11 @@ $alert: $persian_red;
 $warning: $zest;
 $success: $chateau_green;
 $info: $kashmir_blue;
+
+// other
+$color-step--100: 10%;
+
+// hover
+@function hover-color($color, $color-step: $color-step--100) {
+  @return darken($color, $color-step);
+}

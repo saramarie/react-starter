@@ -8,7 +8,10 @@ import './button.scss'
 
 const Button = props => {
   const buttonClasses = cn('Button', {
-    [`Button--${props.color}`]: props.color
+    [`Button--${props.color}`]: props.color,
+    'Button--ghost': props.isGhosted,
+    'Button--fullWidth': props.isFullWidth,
+    [`Button--${props.size}`]: props.size
   })
 
   return (
@@ -19,6 +22,13 @@ const Button = props => {
       {props.label}
     </button>
   )
+}
+
+Button.propTypes = {
+  color: PropTypes.string,
+  size: PropTypes.string,
+  isGhosted: PropTypes.bool,
+  isFullWidth: PropTypes.bool
 }
 
 export default Button;
