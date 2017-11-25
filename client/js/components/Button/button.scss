@@ -1,6 +1,27 @@
 @import "../../../sass/variables/colors";
 @import "../../../sass/mixins/fonts";
 
+$colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'alert': $alert,
+  'warning': $warning,
+  'success': $success,
+  'info': $info
+);
+
+@mixin button-colors(
+  $button-color: null,
+  $text-color: $light
+) {
+  background: $button-color;
+  color: $text-color;
+
+  &:hover {
+    background: darken($button-color, 10%);
+  }
+}
+
 .Button {
   @include text-body();
   background: $light--dark;
@@ -11,6 +32,8 @@
   transition: background .2s ease-in,
     top .2s ease-in;
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
   appearance: none;
   cursor: pointer;
 
@@ -25,24 +48,9 @@
     top: 2px;
   }
 
-  &--primary,
-  &--secondary {
-    color: $light;
-  }
-
-  &--primary {
-    background: $primary;
-
-    &:hover {
-      background: darken($primary, 10%);
-    }
-  }
-
-  &--secondary {
-    background: $secondary;
-
-    &:hover {
-      background: darken($secondary, 10%);
+  @each $color-name, $color in $colors {
+    &--#{$color-name} {
+      @include button-colors($color);
     }
   }
 }

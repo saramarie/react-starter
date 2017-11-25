@@ -14,6 +14,9 @@ class App extends React.Component {
         <Button label="Click Here" />
         <Button label="Click Here" color="primary" />
         <Button label="Click Here" color="secondary" />
+        <Button label="Click Here" color="alert" />
+        <Button label="Click Here" color="warning" />
+        <Button label="Click Here" color="success" />
       </div>
     )
   }
