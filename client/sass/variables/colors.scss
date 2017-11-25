@@ -1,19 +1,21 @@
 // crayon box
 $mine_shaft: #222;
 $emperor: #4a4a4a;
+$alto: #d9d9d9;
 $pure_white: #fff;
-$affair: #8a4c99;
-$kashmir_blue: #495f8c;
+$kashmir_blue: #4c669a;
+$breaker_bay: #4c9a8d;
 $persian_red: #cc3333;
 $copper: #cc7233;
 $shamrock: #33CC80;
 
 // theme colors
-$primary: $affair;
+$primary: $breaker_bay;
 $secondary: $kashmir_blue;
 $dark: $mine_shaft;
 $dark--light: $emperor;
 $light: $pure_white;
+$light--dark: $alto;
 $alert: $persian_red;
 $warning: $copper;
 $success: $shamrock;

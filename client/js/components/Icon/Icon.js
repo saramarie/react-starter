@@ -7,8 +7,6 @@ import cn from 'classnames'
 import './icon.scss'
 
 const Icon = props => {
-  console.log(props);
-
   const iconClasses = cn('Icon', {
     // will concatenate any classes passed into customClasses prop
     [`${props.customClasses}`]: props.customClasses
