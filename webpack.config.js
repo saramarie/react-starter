@@ -3,13 +3,13 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: './client/index.html',
+  template: './index.html',
   filename: 'index.html',
   inject: 'body'
 });
 
 module.exports = {
-  entry: './client/js/index.js',
+  entry: './js/index.js',
   output: {
     path: path.resolve('dist'),
     filename: 'js/bundle.js'
@@ -47,8 +47,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              name: '[path][name].[ext]',
-              publicPath: '../'
+              name: '[path][name].[ext]'
             }
           }
         ]

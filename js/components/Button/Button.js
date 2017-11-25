@@ -25,9 +25,13 @@ const Button = props => {
 }
 
 Button.propTypes = {
+  /** Color */
   color: PropTypes.string,
+  /** Size */
   size: PropTypes.string,
+  /** Ghosted */
   isGhosted: PropTypes.bool,
+  /** Full-Width */
   isFullWidth: PropTypes.bool
 }
 

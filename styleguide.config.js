@@ -1,3 +1,3 @@
 module.exports = {
-  components: 'client/js/components/**/*.js'
+  components: 'js/components/**/*.js'
 };

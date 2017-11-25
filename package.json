@@ -35,7 +35,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "scripts": {
-    "start": "webpack-dev-server --no-info --content-base client/",
+    "start": "webpack-dev-server --no-info",
     "lint": "yarn lint:js && yarn lint:styles",
     "lint:js": "./node_modules/.bin/eslint client --fix",
     "lint:styles": "csscomb client && stylelint client/**/*.scss",

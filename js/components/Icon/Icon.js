@@ -21,7 +21,6 @@ const Icon = props => {
 
 Icon.propTypes = {
   iconName: PropTypes.string.isRequired,
-  title: PropTypes.string,
   customClasses: PropTypes.string
 }
 
