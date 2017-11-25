@@ -1,6 +1,7 @@
+#### Plain Icons
+
+Default size is 16px, and they inherit a fill color from their parent.
+
 ```js
-<p>
   <Icon iconName="check" />
-  <Icon iconName="cog" />
-</p>
 ```
