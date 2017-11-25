@@ -1,0 +1,48 @@
+@import "../../../sass/variables/colors";
+@import "../../../sass/mixins/fonts";
+
+.Button {
+  @include text-body();
+  background: $light--dark;
+  color: $dark;
+  padding: .75rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: background .2s ease-in,
+    top .2s ease-in;
+  position: relative;
+  appearance: none;
+  cursor: pointer;
+
+  // temp
+  margin: 20px;
+
+  &:hover {
+    background: darken($light--dark, 10%);
+  }
+
+  &:active {
+    top: 2px;
+  }
+
+  &--primary,
+  &--secondary {
+    color: $light;
+  }
+
+  &--primary {
+    background: $primary;
+
+    &:hover {
+      background: darken($primary, 10%);
+    }
+  }
+
+  &--secondary {
+    background: $secondary;
+
+    &:hover {
+      background: darken($secondary, 10%);
+    }
+  }
+}
